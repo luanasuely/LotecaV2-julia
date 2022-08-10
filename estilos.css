@@ -1,0 +1,23 @@
+h1 {
+    font-size: 8em;
+    color:darkmagenta;
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.input{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+input{
+    width: 3em;
+    height: 3em;
+    font-size:larger;
+    padding: 0px;
+    font-weight: bold;
+    border-color: blueviolet;
+}
