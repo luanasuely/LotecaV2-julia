@@ -1,9 +1,14 @@
+*{
+    margin: 0px;
+}
+
 h1 {
     font-size: 8em;
     color:darkmagenta;
     font-family: serif;
     font-style: italic;
     text-align: center;
+    margin: 50px 0;
 }
 
 .input{
@@ -20,4 +25,20 @@ input{
     padding: 0px;
     font-weight: bold;
     border-color: blueviolet;
+    margin: 50px 0;
+}
+.centerdiv {
+    text-align: center;
+    margin: 30px;
+}
+
+footer{
+    background-color: blueviolet;
+    color:aliceblue;
+    padding: 10px;
+    margin: 0px;
+}
+
+.geral{
+    height:  calc(100vh - 210.4px -118.4px) ;
 }
