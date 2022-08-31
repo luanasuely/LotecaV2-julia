@@ -12,9 +12,10 @@ if(!numSorte.includes(num) ) {
     i - i -1;
 }
 
-
 }
-console.log(numSorte)
+    console.log(numSorte);
+    document.getElementById("sorteado").innerHTML = count;
+    contarAcertos();
 }
 
 function lerNumero(value, pos){
@@ -28,6 +29,14 @@ function lerNumero(value, pos){
         numEsco[pos] = value
         console.log(numEsco)
     }
-
 }
 
+function contarAcertos(){
+    let cont = 0;
+    numEsco.forEach(function(value, index){
+    if(numSorte.includes(value)){
+        cont ++;
+    }
+    })
+    document.getElementById("acertos").innerHTML = count;
+}
