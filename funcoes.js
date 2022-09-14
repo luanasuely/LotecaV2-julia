@@ -19,14 +19,15 @@ if(!numSorte.includes(num) ) {
 }
 
 function lerNumero(value, pos){
-    if(value < 1) {
+    let num = Number(value)
+    if(num < 1) {
         alert("Numero não pode ser zero ou negativo! digite novamente")
-    } else if(value > 60){
+    } else if(num > 60){
         alert("Numero não pode ser maior que 60! digite novamente")
-    } else if(numEsco.includes(value)){
+    } else if(numEsco.includes(num)){
         alert("Numero repetido! digite novamente")
     } else {
-        numEsco[pos] = value
+        numEsco[pos] = num
         console.log(numEsco)
     }
 }
@@ -35,7 +36,7 @@ function contarAcertos(){
     let cont = 0;
     numEsco.forEach(function(value, index){
     if(numSorte.includes(value)){
-        cont ++;
+        cont = cont + 1;
     }
     })
     document.getElementById("acertos").innerHTML = count;
